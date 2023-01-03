@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Navbar with Search Box | CodingNepal</title>
+  <link rel="stylesheet" href="project.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="menu-icon">
+      <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">
+      CodingNepal
+    </div>
+    <div class="nav-items">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Feedback</a></li>
+    </div>
+    <div class="search-icon">
+      <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+      <span class="fas fa-times"></span>
+    </div>
+    <form action="#">
+      <input type="search" class="search-data" placeholder="Search" required>
+      <button type="submit" class="fas fa-search"></button>
+    </form>
+  </nav>
+  <div class="content-main">
+ 
+    <div class="contenar1"><img class="img-main" src="img/Money-Transfer-1.png" alt="">
+      </div>
+   <div class="contenar2"> <h1>you can exchange mony any time you want</h1>
+    <p>here you can exchange your money bkhas to nogod,nogod to bkahs,upay to bkhas,mobile reacharge,free fire dimond top up,pubg  uc by</p>
+    </div>
+  
+    <div class="box">
+      <img src="img/download (1).png" 
+      alt="">
+      <img src="img/download (4).png" alt="">
+      <img src="img/download (3).png" alt="">
+    </div>
+    <div class="sv"style="overflow: hidden;">
+      <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg"
+        style="fill: #f361db; width: 100%; height: 177px; transform: rotate(180deg);">
+        <path
+          d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
+      </svg>
+    </div>
+    
+    </div>
+   
+  <div id="parent">
+  <div class="card">
+    <img src="img/ucc.png" alt="Avatar" style="width:170px">
+    <div class="container">
+      <h4><b>Buy PUBG UC</b></h4>
+      <p>//Buy Pubg uc form us.//</p>
+    </div>
+  </div>
+  
+    <div class="card">
+      <img src="img/images (2).png" alt="Avatar" style="width: 170px;">
+      <div class="container">
+        <h4><b>INSTAND MOBILE REACHERG</b></h4>
+        <p>//Reacherge Any oparetor//</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/images (2).jfif" alt="Avatar" style="width:170px">
+      <div class="container">
+        <h4><b>BUY FF DIMOND</b></h4>
+        <p>//Click here to buy dimond///</p>
+      </div>
+    </div>
+  </div>
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = () => {
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = () => {
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = () => {
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  </script>
+</body>
+
+</html>
