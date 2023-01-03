@@ -1,3 +1,15 @@
 p{
   background-color: aqua;
 }
+.continar{
+
+  width: 300px;
+  height: 300px;
+  background-color: cyan;
+  color: black;
+  text-align: center;
+  position: relative;
+  margin-top: 50%;
+  margin-left: 50%;
+ 
+}
